@@ -7,10 +7,12 @@
     <ClCompile Include="src\ofApp.cpp">
       <Filter>src\CPPs</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2.cpp">
+    <ClCompile Include="src\Vector2.cpp">
       <Filter>src\CPPs</Filter>
     </ClCompile>
-    <ClCompile Include="src\Vector2.cpp" />
+    <ClCompile Include="src\Ball.cpp">
+      <Filter>src\CPPs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -30,7 +32,15 @@
     <ClInclude Include="Vector2.h">
       <Filter>src\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="src\Vector2.h" />
+    <ClInclude Include="src\Vector2.h">
+      <Filter>src\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ball.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>src\Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

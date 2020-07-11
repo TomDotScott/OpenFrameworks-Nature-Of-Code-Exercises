@@ -40,6 +40,10 @@ inline Vector2 operator +(Vector2& _lhs, Vector2& _rhs) {
 	return Vector2(_lhs.m_x + _rhs.m_x, _lhs.m_y + _rhs.m_y);
 }
 
+inline Vector2 operator +=(Vector2& _lhs, Vector2& _rhs) {
+	return Vector2(_lhs.m_x += _rhs.m_x, _lhs.m_y += _rhs.m_y);
+}
+
 inline Vector2 operator -(Vector2& _lhs, Vector2& _rhs) {
 	return Vector2(_rhs.m_x - _lhs.m_x, _rhs.m_y - _lhs.m_y);
 }
