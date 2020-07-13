@@ -57,6 +57,30 @@ inline Vector2 operator /(Vector2 _lhs, const float _rhs) {
 	return Vector2(_lhs.m_x / _rhs, _lhs.m_y / _rhs);
 }
 
+inline bool operator <(Vector2 _lhs, Vector2 _rhs) {
+	return _lhs.SqrMag() < _rhs.SqrMag();
+}
+
+inline bool operator >(Vector2 _lhs, Vector2 _rhs) {
+	return _lhs.SqrMag() > _rhs.SqrMag();
+}
+
+inline bool operator >=(Vector2 _lhs, Vector2 _rhs) {
+	return (_lhs.SqrMag() > _rhs.SqrMag()) || (_lhs.m_x == _rhs.m_x && _lhs.m_y == _rhs.m_y);
+}
+
+inline bool operator <=(Vector2 _lhs, Vector2 _rhs) {
+	return (_lhs.SqrMag() < _rhs.SqrMag()) || (_lhs.m_x == _rhs.m_x && _lhs.m_y == _rhs.m_y);
+}
+
+inline bool operator ==(Vector2 _lhs, Vector2 _rhs) {
+	return _lhs.m_x == _rhs.m_x && _lhs.m_y == _rhs.m_y;
+}
+
+inline bool operator !=(Vector2 _lhs, Vector2 _rhs) {
+	return !(_lhs == _rhs);
+}
+
 inline const std::ostream& operator <<(std::ostream& _os, Vector2& _v) {
 	_os << "X: " << _v.m_x << " Y: " << _v.m_y << std::endl;
 	return _os;
