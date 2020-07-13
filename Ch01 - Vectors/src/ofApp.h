@@ -22,7 +22,7 @@ public:
 	void gotMessage(ofMessage msg);
 private:
 	Vector2 dir;
-	Ball m_ball{ {100, 100}, {3, 3}, 30, 20 };
+	// Ball m_ball{ {100, 100}, {3, 3}, 30, 20 };
 	bool mouseOnScreen{ false };
 	std::vector<Ball> m_balls;
 };

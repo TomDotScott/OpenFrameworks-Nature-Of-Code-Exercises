@@ -2,6 +2,13 @@
 
 void Ball::Update() {
 
+	// NORMALISE THE VECTOR
+	m_direction.Normalise();
+	// SCALE THE VECTOR
+	m_direction.Mult(0.5f);
+
+	m_acceleration = m_direction;
+	
 	/*m_currentVelocity.m_x > 0 ? m_currentVelocity.m_x += abs(m_acceleration.m_x) : m_currentVelocity.m_x -= abs(m_acceleration.m_x);
 	m_currentVelocity.m_y > 0 ? m_currentVelocity.m_y += abs(m_acceleration.m_y) : m_currentVelocity.m_y -= abs(m_acceleration.m_y);*/
 	m_currentVelocity.Add(m_acceleration);

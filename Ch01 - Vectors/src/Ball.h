@@ -16,6 +16,8 @@ public:
 	Vector2 m_currentVelocity;
 	float m_size{};
 	float m_topSpeed{};
+
+	Vector2 m_direction;
 	
 	Vector2 m_standardVelocity;
 	Vector2 m_acceleration;
