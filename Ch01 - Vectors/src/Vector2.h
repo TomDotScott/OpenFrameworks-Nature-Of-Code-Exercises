@@ -3,7 +3,7 @@
 
 class Vector2 {
 public:
-	explicit Vector2(const float _x = 0, const float _y = 0) : m_x(_x), m_y(_y){};
+	Vector2(const float _x = 0, const float _y = 0) : m_x(_x), m_y(_y){};
 	float m_x;
 	float m_y;
 	// Add vectors

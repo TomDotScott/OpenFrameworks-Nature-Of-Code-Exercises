@@ -11,15 +11,14 @@ public:
 	}
 	void Update();
 	void Draw();
-	void SetIsAccelerating(const bool _val) { m_isAccelerating = _val; }
-private:
+	// void SetIsAccelerating(const bool _val) { m_isAccelerating = _val; }
 	Vector2 m_position;
 	Vector2 m_currentVelocity;
 	float m_size{};
 	float m_topSpeed{};
 	
 	Vector2 m_standardVelocity;
-	Vector2 m_acceleration{-0.001f, 0.1f};
+	Vector2 m_acceleration;
 	
 	bool m_isAccelerating{ false };
 	ofColor m_color;
